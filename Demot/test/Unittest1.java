@@ -5,6 +5,7 @@
  */
 
 import org.junit.Test;
+import org.junit.Before;
 import static org.junit.Assert.*;
 import fi.jamk.oo1k2014.HuijariNoppa;
 import fi.jamk.oo1k2014.Noppa;
@@ -15,10 +16,21 @@ import junit.framework.Assert;
  * @author H4102
  */
 public class Unittest1 {
-    Noppa noppa = new Noppa();
-    Noppa noppa2 = new Noppa();
-    HuijariNoppa huijarinoppa = new HuijariNoppa();
-    HuijariNoppa huijarinoppa2 = new HuijariNoppa();
+    private Noppa noppa;
+    private Noppa noppa2;
+    private HuijariNoppa huijarinoppa;
+    private HuijariNoppa huijarinoppa2;
+    
+    @Before
+     public void setup(){
+      noppa = new Noppa();
+    noppa2 = new Noppa();
+    huijarinoppa = new HuijariNoppa();
+    huijarinoppa2 = new HuijariNoppa();
+            
+            }
+            
+ 
 
     @Test
     public void NopanHeitto() {
